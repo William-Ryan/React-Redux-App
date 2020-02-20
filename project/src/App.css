@@ -1,0 +1,17 @@
+body {
+  background-color: grey;
+  text-align: center;
+}
+
+button {
+  padding: 0.5% 3%;
+  background:yellow;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.App div {
+  padding: 1%;
+  background: blueviolet;
+  margin: 1% 38%;
+}
