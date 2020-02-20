@@ -1,7 +1,7 @@
 import { FETCH_DATA, UPDATE_DATA, SET_ERROR } from "../actions";
 
 const initialState = {
-    data: [],
+    names: [],
     isFetchingData: false,
     error: ""
 };
@@ -12,12 +12,12 @@ export const reducer = (state = initialState, action) => {
           return {
             ...state,
             isFetchingData: true,
-            data: []
+            names: []
           };
         case UPDATE_DATA:
           return {
             ...state,
-            data: action.payload,
+            names: action.payload,
             isFetchingData: false
           };
         case SET_ERROR:

@@ -6,7 +6,7 @@ export const SET_ERROR = "SET_ERROR";
 export const getData = () => dispatch => {
   dispatch({ type: FETCH_DATA });
   axios
-    .get("https://io.tronalddump.api/random/meme")
+    .get("https://anapioficeandfire.com/api/characters")
     .then(res => {
       console.log(res);
       dispatch({ type: UPDATE_DATA, payload: res.data });
